@@ -1,8 +1,8 @@
 /**
- * loadScript module
+ * loadJScript module
  * @type {{Object}}
  */
-const loadScript = {
+const loadJScript = {
     /**
      * _getHead return element head
      * @returns {Element}
@@ -82,4 +82,4 @@ const loadScript = {
 
 };
 
-export default loadScript;
+export default loadJScript;

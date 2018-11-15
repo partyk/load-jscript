@@ -1,4 +1,4 @@
-# @partyk/load-script
+# load-jscript
 
 Promise based script loader for the browser using script tags.
 
@@ -7,7 +7,7 @@ Promise based script loader for the browser using script tags.
 ## install
 
 ```
-$ npm install @partyk/load-script
+$ npm install load-jscript
 ```
 
 ## options
@@ -21,23 +21,23 @@ $ npm install @partyk/load-script
 
 ```
 // import module
-import loadScript from 'node_modules/loadScript';
+import loadJScript from 'node_modules/load-jscript';
 ```
 
 ```
-loadScript.load(url|[urls], options)
+loadJScript.load(url|[urls], options)
     .then(callback)
     .catch(error) 
 ```
 
 ```
 // single script
-loadScript.load('//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js').then(() => {
+loadJScript.load('//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js').then(() => {
     console.log(_.VERSION);   
 });
 
 //multiple script
-loadScript.load([
+loadJScript.load([
     '//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js', 
     '//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js']
     ).then(() => {

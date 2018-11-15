@@ -1,5 +1,5 @@
 {
-  "name": "@partyk/load-script",
+  "name": "load-jscript",
   "version": "1.0.0",
   "description": "Module for script loader for the browser using the script tags",
   "main": "index.js",
