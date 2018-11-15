@@ -1,0 +1,24 @@
+{
+  "name": "@partyk/load-script",
+  "version": "1.0.0",
+  "description": "Module for script loader for the browser using the script tags",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/partyk/load-script.git"
+  },
+  "keywords": [
+    "Webpack",
+    "JavaScript",
+    "Module"
+  ],
+  "author": "Bohdan Partyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/partyk/load-script/issues"
+  },
+  "homepage": "https://github.com/partyk/load-script#readme"
+}
