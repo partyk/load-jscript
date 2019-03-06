@@ -33,12 +33,12 @@ const loadJScript = {
      * @private
      */
     _loadUrl: (url, options) => {
-        if (loadScript._isScriptExist(url)) {
+        if (loadJScript._isScriptExist(url)) {
             console.warn(`Script ${url} is loaded. Duplicate script!`);
             return Promise.resolve();
         }
         return new Promise((resolve, reject) => {
-            let script = loadScript._getScript(options);
+            let script = loadJScript._getScript(options);
             script.src = url;
             script.addEventListener('load', () => resolve(script), false);
             script.addEventListener('error', () => reject(script), false);
@@ -72,10 +72,10 @@ const loadJScript = {
             options
         };
         if (typeof urls === 'string') {
-            return loadScript._loadUrl(urls, options);
+            return loadJScript._loadUrl(urls, options);
         } else {
             return Promise.all(urls.map((url) => {
-                loadScript._loadUrl(url, options);
+                loadJScript._loadUrl(url, options);
             }));
         }
     }
